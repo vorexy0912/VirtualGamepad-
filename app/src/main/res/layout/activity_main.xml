@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态: 未连接"
+        android:textSize="18sp"
+        android:gravity="center"/>
+        
+    <TextView
+        android:id="@+id/txtConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:gravity="center"/>
+        
+    <TextView
+        android:id="@+id/txtSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="陀螺仪: 等待数据..."
+        android:textSize="14sp"
+        android:gravity="center"/>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        
+        <Spinner
+            android:id="@+id/connectionSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+            
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接"/>
+            
+        <Button
+            android:id="@+id/btnDisconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="断开"/>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btnCalibrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="校准传感器"
+        android:layout_marginTop="8dp"/>
+        
+    <ListView
+        android:id="@+id/deviceListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"/>
+        
+</LinearLayout>
+
