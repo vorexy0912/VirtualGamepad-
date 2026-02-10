@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">虚拟游戏手柄</string>
+    <string-array name="connection_types">
+        <item>蓝牙</item>
+        <item>USB</item>
+        <item>WiFi</item>
+    </string-array>
+</resources>
+
